@@ -2,7 +2,7 @@ package pattern;
 
 import java.util.Scanner;
 
-public class Patternpyramid18 {
+public class Pattern21 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -10,19 +10,23 @@ public class Patternpyramid18 {
 	    int i,j,k,p;
 	    System.out.println("Enter the number");
 	    int n=s.nextInt();
-	    for(i=0;i<n;i++)
+	    for(i=1;i<=n;i++)
 	    {
-	    	for(k=n;k>i;k--)
+	    	for(j=1;j<=2*n+1;j++)
 	    	{
-	    		System.out.print(" ");	
+	    		if(i+j==7||j==i+5)
+	    		{
+	    			System.out.print("*");
+	    		}
+	    		else
+	    		{
+	    			System.out.print("#");
+	    		}
 	    	}
-	    	for(j=i;j>=0;j--)
-		    	{
-		    		System.out.printf("%d ",j+1);
-		    	}
-		    	System.out.println();	
+	    	System.out.println();
 	    }
-	    
+
 	}
 
-}
+	}
+

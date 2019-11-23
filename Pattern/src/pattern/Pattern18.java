@@ -1,8 +1,6 @@
 package pattern;
-
 import java.util.Scanner;
-
-public class Patternpyramid18 {
+public class Pattern18 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -10,19 +8,24 @@ public class Patternpyramid18 {
 	    int i,j,k,p;
 	    System.out.println("Enter the number");
 	    int n=s.nextInt();
-	    for(i=0;i<n;i++)
+	    for(i=1;i<=n;i++)
 	    {
-	    	for(k=n;k>i;k--)
+	    	for(j=1;j<=i;j++)
 	    	{
-	    		System.out.print(" ");	
+	    		System.out.print("C");
 	    	}
-	    	for(j=i;j>=0;j--)
-		    	{
-		    		System.out.printf("%d ",j+1);
-		    	}
-		    	System.out.println();	
+	    	for(k=1;k<=i;k++)
+	    	{
+	    		System.out.print("S");
+	    	}
+	    	for(p=1;p<=i;p++)
+	    	{
+	    		System.out.print("K");
+	    	}
+	    	System.out.println();
 	    }
 	    
+	    }
 	}
 
-}
+
